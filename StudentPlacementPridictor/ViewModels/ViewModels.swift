@@ -96,8 +96,17 @@ final class AuthViewModel: ObservableObject {
     var canLogin: Bool { !loginUsername.isEmpty && !loginPassword.isEmpty && isCaptchaCorrect }
     var passwordsMatch: Bool { regPassword == regConfirmPassword && !regPassword.isEmpty }
     var regFormValid: Bool {
-        !regFullName.isEmpty && !regEmail.isEmpty && !regMobile.isEmpty &&
-        !regUsername.isEmpty && passwordsMatch && regEmail.contains("@")
+        let validMobilePrefixes = ["6", "7", "8", "9"]
+            let isMobileValid = regMobile.count == 10 &&
+                                validMobilePrefixes.contains(where: { regMobile.hasPrefix($0) }) &&
+                                regMobile.allSatisfy(\.isNumber)
+        
+        return !regFullName.isEmpty &&
+                   !regEmail.isEmpty &&
+                   regEmail.contains("@") &&
+                   !regUsername.isEmpty &&
+                   passwordsMatch &&
+                   isMobileValid
     }
 
     init() {
@@ -455,7 +464,7 @@ final class PlacementPredictorViewModel: ObservableObject {
         score += presenceScore
 
         let probability = min(max(score, 20), 97)
-        let tier: PlacementTier = probability >= 70 ? .high : (probability >= 45 ? .medium : .low)
+        let tier: PlacementTier = probability >= 80 ? .high : (probability >= 55 ? .medium : .low)
 
         return PlacementResult(
             overallProbability: probability,

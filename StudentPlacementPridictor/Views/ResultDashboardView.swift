@@ -644,7 +644,7 @@ private struct RDFlowLayout<Item, Content: View>: View {
     @ViewBuilder let content: (Item) -> Content
 
     var body: some View {
-        var rows: [[Item]] = [[]]
+//        var rows: [[Item]] = [[]]
         // Simple wrapping — layout engine handles actual sizing
         VStack(alignment: .leading, spacing: 4) {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 60))], alignment: .leading, spacing: 4) {

@@ -1,5 +1,4 @@
 import SwiftUI
-
 // MARK: - Color Palette
 extension Color {
     static let brandPrimary    = Color(hex: "#6C63FF")
