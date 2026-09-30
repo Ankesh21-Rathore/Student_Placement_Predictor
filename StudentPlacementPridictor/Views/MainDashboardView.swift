@@ -15,7 +15,7 @@ struct MainDashboardView: View {
 
     var body: some View {
         ZStack {
-            AmbientGlowBackground(color1: .brandPrimary, color2: Color(hex: "#4DA8FF"))
+            AmbientGlowBackground(color1: .brandPrimary, color2: Color(red: 0.2, green: 0.4, blue: 1.0))
 
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
@@ -153,7 +153,7 @@ struct DashboardHeroHeader: View {
         ZStack {
             // Background gradient card
             LinearGradient(
-                colors: [Color(hex: "#1A0A4C"), Color(hex: "#0D0D1A")],
+                colors: [Color(red: 0.2, green: 0.4, blue: 1.0), Color(red: 0.2, green: 0.4, blue: 1.0)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )

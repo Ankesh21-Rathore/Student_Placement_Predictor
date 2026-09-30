@@ -763,18 +763,18 @@ struct FormStep: Identifiable {
 
 extension FormStep {
     static let allSteps: [FormStep] = [
-        FormStep(id: 0, title: "Education",          subtitle: "Academic background",          icon: "graduationcap.fill",      accentColor: .brandPrimary),
-        FormStep(id: 1, title: "Internships",        subtitle: "Work experience",              icon: "briefcase.fill",          accentColor: Color(hex: "#4DA8FF")),
-        FormStep(id: 2, title: "Projects",           subtitle: "What you've built",           icon: "hammer.fill",             accentColor: Color(hex: "#FF8C42")),
-        FormStep(id: 3, title: "DSA & Coding",       subtitle: "Algorithmic skills",           icon: "chevron.left.forwardslash.chevron.right", accentColor: Color(hex: "#43E97B")),
-        FormStep(id: 4, title: "Certifications",     subtitle: "Verified credentials",         icon: "rosette",                 accentColor: Color(hex: "#F7C948")),
-        FormStep(id: 5, title: "Soft Skills",        subtitle: "Communication & aptitude",     icon: "person.2.fill",           accentColor: Color(hex: "#FF6584")),
-        FormStep(id: 6, title: "Tech Stack",         subtitle: "Languages & frameworks",       icon: "cpu.fill",                accentColor: Color(hex: "#9B59B6")),
-        FormStep(id: 7, title: "Resume",             subtitle: "Your document",                icon: "doc.fill",                accentColor: Color(hex: "#26C6DA")),
-        FormStep(id: 8, title: "Portfolio",          subtitle: "Personal website",             icon: "globe",                   accentColor: Color(hex: "#66BB6A")),
-        FormStep(id: 9, title: "Achievements",       subtitle: "Highlights & extras",          icon: "trophy.fill",             accentColor: Color(hex: "#FFA726")),
-        FormStep(id: 10, title: "Competitive Exams", subtitle: "GATE, JEE, GRE scores",       icon: "list.clipboard.fill",     accentColor: Color(hex: "#EC407A")),
-        FormStep(id: 11, title: "Social Handles",    subtitle: "Online presence",              icon: "link",                    accentColor: Color(hex: "#42A5F5")),
-        FormStep(id: 12, title: "Tools & IDEs",      subtitle: "Your dev environment",         icon: "wrench.and.screwdriver.fill", accentColor: Color(hex: "#AB47BC"))
+        FormStep(id: 0,  title: "Education",          subtitle: "Academic background",       icon: "graduationcap.fill",                 accentColor: .brandPrimary),
+        FormStep(id: 1,  title: "Internships",        subtitle: "Work experience",           icon: "briefcase.fill",                     accentColor: Color(red: 0.29, green: 0.50, blue: 0.65)), // Dusty blue
+        FormStep(id: 2,  title: "Projects",           subtitle: "What you've built",         icon: "hammer.fill",                        accentColor: Color(red: 0.77, green: 0.41, blue: 0.23)), // Warm sienna
+        FormStep(id: 3,  title: "DSA & Coding",       subtitle: "Algorithmic skills",        icon: "chevron.left.forwardslash.chevron.right", accentColor: Color(red: 0.29, green: 0.55, blue: 0.36)), // Sage green
+        FormStep(id: 4,  title: "Certifications",     subtitle: "Verified credentials",      icon: "rosette",                            accentColor: Color(red: 0.78, green: 0.57, blue: 0.16)), // Deep amber
+        FormStep(id: 5,  title: "Soft Skills",        subtitle: "Communication & aptitude",  icon: "person.2.fill",                      accentColor: Color(red: 0.79, green: 0.58, blue: 0.42)), // Terracotta
+        FormStep(id: 6,  title: "Tech Stack",         subtitle: "Languages & frameworks",    icon: "cpu.fill",                           accentColor: Color(red: 0.55, green: 0.35, blue: 0.60)), // Muted plum
+        FormStep(id: 7,  title: "Resume",             subtitle: "Your document",             icon: "doc.fill",                           accentColor: Color(red: 0.29, green: 0.62, blue: 0.68)), // Muted teal
+        FormStep(id: 8,  title: "Portfolio",          subtitle: "Personal website",          icon: "globe",                              accentColor: Color(red: 0.32, green: 0.58, blue: 0.35)), // Forest green
+        FormStep(id: 9,  title: "Achievements",       subtitle: "Highlights & extras",       icon: "trophy.fill",                        accentColor: Color(red: 0.83, green: 0.66, blue: 0.33)), // Burnished gold
+        FormStep(id: 10, title: "Competitive Exams",  subtitle: "GATE, JEE, GRE scores",    icon: "list.clipboard.fill",                accentColor: Color(red: 0.72, green: 0.28, blue: 0.42)), // Dusty rose
+        FormStep(id: 11, title: "Social Handles",     subtitle: "Online presence",           icon: "link",                               accentColor: Color(red: 0.35, green: 0.55, blue: 0.72)), // Steel blue
+        FormStep(id: 12, title: "Tools & IDEs",       subtitle: "Your dev environment",      icon: "wrench.and.screwdriver.fill",         accentColor: Color(red: 0.58, green: 0.32, blue: 0.62))  // Soft purple
     ]
 }
